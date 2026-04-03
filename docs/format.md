@@ -8,7 +8,6 @@
 
 This document defines the complete syntax and semantics of the `.treeignore` file format.
 
----
 
 ## Overview
 
@@ -22,7 +21,6 @@ It supports three types of content:
 
 3. **Comments and blank lines** - ignored during parsing
 
----
 
 ## Encoding
 
@@ -30,7 +28,6 @@ It supports three types of content:
 
 - Lines endings may be `\n` (Unix) or `\r\n` (Windows)
 
----
 
 ## Comments
 
@@ -43,13 +40,11 @@ node_modules/
 
 Inline comments are not supported. The `#` character is only treated as a comment marker when it is the first non-whitespace character on a line.
 
----
 
 ## Blank Lines
 
 Blank lines (empty or white-space only) are ignored and have no effect.
 
----
 
 ## Global Exclusion Patterns
 
@@ -65,7 +60,6 @@ dist/
 These patterns apply to **every** tree output - the general tree and all profile trees.
 Pattern matching rules are defined in [matching.md](matching.md)
 
----
 
 ## Variable Assignments
 
@@ -110,7 +104,6 @@ Variables are classified by their name:
 
 Any variable name that does not match a known pattern produces a parse error.
 
----
 
 ## Profiles
 
@@ -136,7 +129,6 @@ tree_docs = [
 
 See [profiles.md](profiles.md) for detailed profile behavior.
 
----
 
 ## Tags
 
@@ -173,7 +165,6 @@ See [tags.md](tags.md) for detailed behavior
 
 > **Note:** Tags are parsed in the current MVP but not yet applied
 
----
 
 ## Parse Errors
 
@@ -189,7 +180,6 @@ The parser produces structured errors for invalid syntax, including:
 
 When a parse error occurs, `tree-it` prints a clear error message and exits with a non-zero status code.
 
----
 
 ## Complete Example
  

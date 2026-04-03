@@ -5,7 +5,6 @@
 
 This document defiens the pattern matching rules used by `.treeignore` and `.gitignore` fallback in [tree-it](https://github.com/ciroalo/tree-it)
 
----
 
 ## Overview
 
@@ -13,7 +12,6 @@ This document defiens the pattern matching rules used by `.treeignore` and `.git
 
 All patterns, whether from global exclusions or profile definitions, follow the same matching rules described here.
 
----
 
 ## Path Normalization
 
@@ -27,7 +25,6 @@ Before any matching occurs, candidate paths are normalized:
 
 For example, given `tree-it ./my-project`, a file at `./my-project/src/main.rs` is matched against the relative path `src/main.rs`.
 
----
 
 ## Supported Patterns
 
@@ -98,7 +95,6 @@ Leading `/` can be combined with trailing `/` to anchor a directory-only pattern
 
 This is useful when a common name like `target` or `build` exists at multiple levels but you only want to exclude the one at the project root.
 
----
 
 ## Matching Scope
 
@@ -108,7 +104,6 @@ For example the pattern `temp/` matches any directory named `temp` at any depth 
 
 To restrict a pattern to the root level only, prefix it with `/`. For example, `/temp/` matches only a `temp` directory at the root of the analyzed tree.
 
----
 
 ## Matching Behavior
 
@@ -118,7 +113,6 @@ To restrict a pattern to the root level only, prefix it with `/`. For example, `
 
 - **Global + profile:** when a profile is active, global exclusion patterns are evaluated first, followed by profile-specific patterns.
 
---- 
 
 ## Not supported (MVP)
 
@@ -133,7 +127,6 @@ The following features are **not supported** in the current version:
 
 These may be added in future versions.
 
---- 
 
 ## Examples
 

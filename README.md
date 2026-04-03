@@ -6,7 +6,6 @@
 
 A `.treeignore` file lets you control what appears in your project trees by defining exclusion rules, reusable profiles, and configuration tags - all from a single file placed in your projecrt root.
 
----
 
 ## Table of Contents
  
@@ -25,7 +24,6 @@ A `.treeignore` file lets you control what appears in your project trees by defi
 - [License](#license)
 - [Author](#author)
  
----
 
 ## Quick Start
 
@@ -58,7 +56,6 @@ tree-it
 tree-it --profile tree_docs
 ```
 
----
 
 ## How it Works
 
@@ -69,8 +66,6 @@ tree-it --profile tree_docs
 2. **Configuration source** - variable assignments define profiles and tags that control how different tree views are generated
 
 When `tree-it` runs, it looks for `.treeignore` in the target directory. If found, it uses it as the sole configuration source (`.gitignore` is ignored). If `.treeignore` is absent, `tree-it` falls back to `.gitignore` for exclusion rules only. If neither file exists, the full directory tree is generated.
-
----
 
 ## File Format
 
@@ -167,7 +162,6 @@ CLI flags > profile tags > global tags
 
 > **Note:** Tags are parsed in the current MVP but not yet applied. Tag behavior is planned for a future version.
 
----
 
 ## Pattern Matching
 
@@ -208,7 +202,6 @@ It supports a defined subset of pattern features.
 
 For the complete pattern matching specification, see [matching.md](docs/matching.md)
 
----
 
 ## Examples
 
@@ -219,8 +212,6 @@ See the [examples](examples/) directory for sample `.treeignore` files:
 - `profiles.treeignore` - multiple profile definitions
 
 - `full.treeignore` - exclusions, profiles, and tags combined
-
----
 
 ## Current Status
 
@@ -250,8 +241,6 @@ The `.treeignore` format is at **v0.1** and is consumed by [tree-it](https://git
 
 - Image output
 
----
-
 ## Documentation
  
 | Document | Description |
@@ -261,14 +250,10 @@ The `.treeignore` format is at **v0.1** and is consumed by [tree-it](https://git
 | [docs/resolution.md](docs/resolution.md) | Ignore file resolution strategy |
 | [docs/profiles.md](docs/profiles.md) | Profile system reference |
 | [docs/tags.md](docs/tags.md) | Tag system reference |
- 
----
- 
+
 ## Related
  
 - [tree-it](https://github.com/ciroalo/tree-it) — the CLI tool that consumes `.treeignore` files
- 
----
  
 ## License
  

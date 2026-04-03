@@ -8,7 +8,6 @@
 
 This document describes the profile system in `.treeignore`
 
----
 
 ## What are Profiles?
 
@@ -38,7 +37,6 @@ tree_public = [
 Each quoted string in the list is an exclusion pattern. These patterns follow the same 
 matching rules as global exclusions (see [matching.md](matching.md))
 
----
 
 ## Profile Naming
 
@@ -48,7 +46,6 @@ matching rules as global exclusions (see [matching.md](matching.md))
 
 - `tree_docs`, `Tree_docs`, and `TREE_DOCS` all refer to the same profile
 
----
 
 ## How Exclusions Combine
 
@@ -85,7 +82,6 @@ tests/
 benches/
 ```
 
----
 
 ## Execution Modes
 
@@ -124,7 +120,6 @@ tree-it --profile tree_docs
 
 Generates only the selected profile's tree. The general tree and other profiles are not included in the output.
 
----
  
 ## Error Handling
  
@@ -153,7 +148,6 @@ This applies even if `.gitignore` exists — profiles are a `.treeignore`-only f
  
 Only a single profile may be selected per execution. Passing multiple `--profile` flags is not supported in the MVP.
 
----
 
 ## Profile Tags
 

@@ -9,7 +9,6 @@
 This document describes how [tree-it](https://github.com/ciroalo/tree-it) resolves 
 which ignore file to use when generating directory trees.
 
----
 
 ## Priority Order
 
@@ -21,7 +20,6 @@ which ignore file to use when generating directory trees.
 | 2        | `.gitignore`   | Exclusion patterns only                         |
 | 3        | None           | No exclusions — full directory tree is generated |
 
----
 
 ## Resolution Rules
 
@@ -31,7 +29,6 @@ which ignore file to use when generating directory trees.
  
 3. If neither file exists, `tree-it` generates a complete directory tree with no exclusion rules applied.
 
----
 
 ## Lookup Location
 
@@ -62,8 +59,7 @@ The current working directory is used:
 ./.treeignore
 ./.gitignore
 ```
- 
----
+
 
 ## `.gitignore` Fallback Behavior
 
@@ -79,7 +75,6 @@ When `.gitignore` is used as the fallback source:
 
 - Only the general tree is generated during default execution
 
----
 
 ## Profile Requirement
  
@@ -90,8 +85,7 @@ tree-it --profile tree_docs
 ```
  
 and `.treeignore` is not found in the target directory, `tree-it` will print an error and exit with a non-zero status code — even if `.gitignore` exists.
- 
----
+
  
 ## Summary
  

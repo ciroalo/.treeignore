@@ -8,7 +8,6 @@
 
 This document describes the tag system in `.treeignore`
 
----
 
 ## Overview
 
@@ -19,7 +18,6 @@ than passing them on the command line every time
 > **Note:** In the current MVP, tags are parsed and validated during configuration loading,
 but they are not yet applied to tree generation. Full tag behavior is planned for future versions.
 
----
 
 ## Global Tags
 
@@ -34,7 +32,6 @@ tags = [
 
 The variable must be named exactly `tags`
 
----
 
 ## Profile Tags
 
@@ -55,7 +52,6 @@ When a profile is selected, its tags are merged with global tags:
 
 - Tags present in both, the profile value overrided the global value
 
----
 
 ## Precedence
 
@@ -73,7 +69,6 @@ This means:
 
 3. A global tag applies only if neither a CLI flag nor a profile tag sets that option
 
----
 
 ## Syntax
 
@@ -88,7 +83,6 @@ tags = [
 
 Each element is a double-quoted string representing a CLI-style option
 
----
 
 ## Error Handling (Planned)
 
@@ -98,7 +92,6 @@ In a future version, unknown or invalid tags will produce errors. The planned be
 
 - This ensures that typos or outdated tags are caught rather than silently ignored
 
----
  
 ## Example
  
