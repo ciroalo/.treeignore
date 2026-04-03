@@ -1,5 +1,7 @@
 # .treeignore
 
+![treeignore-banner](docs/imgs/banner.svg)
+
 `.treeignore` is a configuration file format for [tree-it](https://github.com/ciroalo/tree-it), a CLI tool that generates visual directory trees for documentation and project visualization.
 
 A `.treeignore` file lets you control what appears in your project trees by defining exclusion rules, reusable profiles, and configuration tags - all from a single file placed in your projecrt root.
