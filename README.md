@@ -9,8 +9,22 @@ A `.treeignore` file lets you control what appears in your project trees by defi
 ---
 
 ## Table of Contents
-
-
+ 
+- [Quick Start](#quick-start)
+- [How It Works](#how-it-works)
+- [File Format](#file-format)
+  - [Global Exclusions](#global-exclusions)
+  - [Profiles](#profiles)
+  - [Tags](#tags)
+- [Pattern Matching](#pattern-matching)
+- [Ignore File Resolution](#ignore-file-resolution)
+- [Examples](#examples)
+- [Current Status](#current-status)
+- [Documentation](#documentation)
+- [Related](#related)
+- [License](#license)
+- [Author](#author)
+ 
 ---
 
 ## Quick Start
