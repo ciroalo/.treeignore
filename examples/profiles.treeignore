@@ -1,0 +1,35 @@
+# .treeignore with multiple profiles
+# Each profile adds its own exclusions on top of global ones
+
+# Global exclusions
+.git/
+node_modules/
+dist/
+target/
+*.log
+
+# Documentation view — hides tests and CI config
+tree_docs = [
+    "tests/",
+    ".github/",
+    "benches/",
+    "scripts/",
+    "*.test.js"
+]
+
+# Public-facing view — hides internal tooling
+tree_public = [
+    "internal/",
+    ".env",
+    "scripts/",
+    "*.secret",
+    "docker-compose.yml"
+]
+
+# API-focused view — shows only what matters for the API
+tree_api = [
+    "frontend/",
+    "docs/",
+    "tests/",
+    "*.md"
+]

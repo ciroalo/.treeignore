@@ -1,0 +1,25 @@
+# Simple .treeignore with global exclusions only
+# No profiles, no tags — just patterns to exclude
+
+# Version control
+.git/
+
+# Dependencies
+node_modules/
+vendor/
+
+# Build artifacts
+dist/
+build/
+target/
+
+# IDE and editor files
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

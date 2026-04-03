@@ -1,0 +1,49 @@
+# ==========================
+# .treeignore — full example
+# ==========================
+# Demonstrates global exclusions, profiles, and tags
+
+# ---- Global exclusions ----
+# These apply to every tree output
+
+.git/
+node_modules/
+dist/
+build/
+/target
+*.log
+**/*.tmp
+.DS_Store
+
+# ---- Profiles ----
+# Each profile defines additional exclusions
+
+# For README and documentation purposes
+tree_docs = [
+    "tests/",
+    ".github/",
+    "benches/",
+    "scripts/",
+    ".husky/"
+]
+
+# For showing the public-facing structure
+tree_public = [
+    "internal/",
+    ".env",
+    "*.secret",
+    "docker-compose.yml",
+    "Makefile"
+]
+
+# ---- Tags (parsed, not yet applied) ----
+
+# Global tags — default options for all trees
+tags = [
+    "--level=3"
+]
+
+# Profile-specific tags — override global when active
+tree_docs_tags = [
+    "--level=2"
+]
