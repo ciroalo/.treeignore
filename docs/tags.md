@@ -13,7 +13,7 @@ This document describes the tag system in `.treeignore`
 
 Tags are CLI-style defined inside `.treeignore` that influence how trees are generated 
 or displayed. They allow you to embed default options in the configuration file rather 
-than passing them on the command line every time
+than passing them on the command line every time.
 
 > **Note:** In the current MVP, tags are parsed and validated during configuration loading,
 but they are not yet applied to tree generation. Full tag behavior is planned for future versions.
