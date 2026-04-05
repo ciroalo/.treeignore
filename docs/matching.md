@@ -3,7 +3,7 @@
 **Version:** 0.1  
 **Status:** Stable (MVP subset) 
 
-This document defiens the pattern matching rules used by `.treeignore` and `.gitignore` fallback in [tree-it](https://github.com/ciroalo/tree-it)
+This document defines the pattern matching rules used by `.treeignore` and `.gitignore` fallback in [tree-it](https://github.com/ciroalo/tree-it)
 
 
 ## Overview
